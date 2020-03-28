@@ -70,17 +70,20 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
+                        <Button
+    android:id="@+id/btn_click"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Click"
+    android:onClick="@{(view)->rowRecyclerViewVM.clickONBtn(view,rowRecyclerViewM)}"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
-        <!--        <Button
-            android:id="@+id/btn_click"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Click"
-            android:onClick="@{(view)->rowRecyclerViewVM.clickONBtn(view,rowRecyclerViewM)}"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />-->
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
